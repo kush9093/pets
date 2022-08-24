@@ -12,7 +12,7 @@ function App() {
   const [selected, setSelected] = useState();
   const [code, setCode] = useState([]);
   useEffect(() => {
-    const key = "MHRpw4y9MmpamZ1tuXBFqDMl%2FRZOAI6T9O5UBy8LByS3ShZ3aStxYe1Mzns5edeaPjyGzdnGDS1PtJiEhhBB1g%3D%3D";
+    const key = process.env.REACT_APP_API_KEY;
     let url = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30`;
     document.querySelector(".one").style.display = "none"
     document.querySelector(".topd").style.display = "none"
@@ -34,7 +34,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const key = "MHRpw4y9MmpamZ1tuXBFqDMl%2FRZOAI6T9O5UBy8LByS3ShZ3aStxYe1Mzns5edeaPjyGzdnGDS1PtJiEhhBB1g%3D%3D";
+    const key = process.env.REACT_APP_API_KEY;
     const url2 = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/sido?serviceKey=${key}&numOfRows=20&_type=json`
     fetch(url2).then(response => response.json())
       .then(json => {
@@ -47,7 +47,7 @@ function App() {
 
 
   const handleSearch = (bgnde, endde, upr_cd = "6290000", upkind) => {
-    const key = "MHRpw4y9MmpamZ1tuXBFqDMl%2FRZOAI6T9O5UBy8LByS3ShZ3aStxYe1Mzns5edeaPjyGzdnGDS1PtJiEhhBB1g%3D%3D";
+    const key = process.env.REACT_APP_API_KEY;
     let url = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30&bgnde=${bgnde}&endde=${endde}&upr_cd=${upr_cd}&upkind=${upkind}`;
     document.querySelector(".app").style.display = "none"
     document.querySelector(".loader").style.display = "block";
