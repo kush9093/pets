@@ -1,0 +1,24 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap:3px;
+}
+
+.detail+.list {
+    width:25%;
+    overflow-y: scroll; 
+}
+
+.detail+.list .item {
+    width: 100%
+}
+@media ( max-width: 768px ) {
+    
+    .detail+.list {
+        display: block;
+    }
+    .detail+.list {
+        width:100%;
+        overflow-y: scroll; 
+    }
+  }

@@ -1,0 +1,41 @@
+
+
+.inputClass {
+    width: 20%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(250,250,250);
+    border-radius: 15px;
+}
+
+.buttonClass {
+    width: 9%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+@media ( max-width: 768px ) {
+    .inputClass {
+        width:25%;
+    }
+    .top {
+        text-align: center;
+    }
+    .sb {
+        width:100%;
+    }
+    .mb {
+        width: 20%;
+    }
+  }

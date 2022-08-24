@@ -1,0 +1,34 @@
+
+.item {
+    width : 32%;
+    display: flex;
+    cursor: pointer;
+    padding:3px;
+    border: 1px solid lightgray;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
+.thumbnail {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    height: 150px;
+    border-radius: 30px;
+}
+
+.inform {
+    text-align: left;
+    padding-left: 20px;
+
+}
+@media ( max-width: 768px ) {
+    .item {
+        width: 100%;
+    }
+  }

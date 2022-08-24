@@ -1,0 +1,27 @@
+.detail {
+    width: 70%;
+    
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+th,td {
+    padding: 10px 10px 10px 10px;
+}
+td:nth-child(1){
+    font-weight: bold;
+    background-color: rgb(250,250,250);
+}
+
+@media ( max-width: 768px ) {
+    .detail {
+        width:100%;
+        display: block;
+    }
+    .detailimg{
+        height: 400px !important;
+    }
+  }
