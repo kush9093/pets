@@ -13,7 +13,7 @@ function App() {
   const [code, setCode] = useState([]);
   useEffect(() => {
     const key = process.env.REACT_APP_API_KEY;
-    let url = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30`;
+    let url = `https://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30`;
     document.querySelector(".one").style.display = "none"
     document.querySelector(".topd").style.display = "none"
     document.querySelector(".app").style.display = "none"
@@ -35,7 +35,7 @@ function App() {
 
   useEffect(() => {
     const key = process.env.REACT_APP_API_KEY;
-    const url2 = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/sido?serviceKey=${key}&numOfRows=20&_type=json`
+    const url2 = `https://apis.data.go.kr/1543061/abandonmentPublicSrvc/sido?serviceKey=${key}&numOfRows=20&_type=json`
     fetch(url2).then(response => response.json())
       .then(json => {
         setCode(json.response.body.items.item)
@@ -48,7 +48,7 @@ function App() {
 
   const handleSearch = (bgnde, endde, upr_cd = "6290000", upkind) => {
     const key = process.env.REACT_APP_API_KEY;
-    let url = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30&bgnde=${bgnde}&endde=${endde}&upr_cd=${upr_cd}&upkind=${upkind}`;
+    let url = `https://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30&bgnde=${bgnde}&endde=${endde}&upr_cd=${upr_cd}&upkind=${upkind}`;
     document.querySelector(".app").style.display = "none"
     document.querySelector(".loader").style.display = "block";
     fetch(url).then(response => response.json())
