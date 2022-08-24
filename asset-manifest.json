@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pets/static/css/main.e335d93c.css",
+    "main.js": "/pets/static/js/main.f48e0f71.js",
+    "index.html": "/pets/index.html",
+    "main.e335d93c.css.map": "/pets/static/css/main.e335d93c.css.map",
+    "main.f48e0f71.js.map": "/pets/static/js/main.f48e0f71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e335d93c.css",
+    "static/js/main.f48e0f71.js"
+  ]
+}
